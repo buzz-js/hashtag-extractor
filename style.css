@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,400i,700");
+*,
+::after,
+::before {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  background: #131417;
+}
+
+.container {
+  background: #1e1f26;
+  padding: 2rem 1rem;
+  margin: 0 0 70px;
+  position: relative;
+  width: 80%;
+  margin: 1.5rem auto;
+}
+.container .title,
+.container .subtitle {
+  font-size: 2rem;
+  color: #fff;
+  margin: 0;
+}
+.container .title span,
+.container .subtitle span {
+  color: #0ebeff;
+}
+
+.container .textarea {
+  display: block;
+  width: 100%;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #495057;
+  padding: 0.375rem 0.75rem;
+  margin: 1rem 0;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  overflow: auto;
+  resize: vertical;
+}
+
+.container #hashtags {
+  color: #0ebeff;
+  margin-top: 1rem;
+}

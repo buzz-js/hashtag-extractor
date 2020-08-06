@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>#Hashtag Extractor</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="title"><span>#</span>Hashtag Extractor</h1>
+      <textarea class="textarea" rows="5" oninput="getTags(event)"></textarea>
+      <h2 class="subtitle"><span>#</span>My hashtags</h2>
+      <div id="hashtags"></div>
+
+      <script>
+        function getTags({ target }) {
+          let { value } = target;
+          let pattern = /#\w+/g;
+          let tags = value.match(pattern);
+
+          if (tags) {
+            document.getElementById("hashtags").innerHTML = tags.join(" ");
+          }
+        }
+      </script>
+    </div>
+  </body>
+</html>
